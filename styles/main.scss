@@ -1,0 +1,19 @@
+ @import 'utilities/variables';
+ @import 'utilities/mixins';
+ @import 'utilities/responsive';
+
+ @import 'blocks/components';
+ @import 'blocks/header';
+ @import 'blocks/menu';
+ @import 'blocks/container';
+ @import 'blocks/cards';
+ @import 'blocks/page';
+ @import 'blocks/main';
+ @import 'blocks/services';
+ @import 'blocks/footer';
+ @import 'blocks/form';
+
+ * {
+     padding: 0;
+     margin: 0;
+ }

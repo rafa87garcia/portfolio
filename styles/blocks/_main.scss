@@ -1,0 +1,35 @@
+.main {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/main.jpg");
+    opacity: 0.9;
+    @include background-image;
+    &__title {
+        font-size: 2rem;
+        color: $white;
+        &--primary {
+            font-family: $font_secundary;
+            font-size: 4rem;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            @include tablet {
+                font-size: 2rem;
+            }
+        }
+        &--secundary {
+            font-weight: 400;
+            font-size: 2.5rem;
+            @include tablet {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    &__description {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,25 @@
+.menu {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    &__item {
+        color: $white;
+        font-weight: 400;
+        text-decoration: none;
+        margin: 0.5rem;
+        font-size: 1.2rem;
+        border-right: solid;
+        padding-right: 1rem;
+        &:hover {
+            font-weight: bold;
+        }
+
+        &:nth-child(4) {
+            border-right: 0;
+        }
+
+        @include tablet {
+            margin: 0.3rem;
+        }
+    }
+}

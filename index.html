@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio - Rafael Garcia Rea</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="menu">
+      <a href="#inicio" class="menu__item">Inicio</a>
+      <a href="#skills" class="menu__item">Virtudes</a>
+      <a href="#services" class="menu__item">Servicios</a>
+      <a href="#contact" class="menu__item">Contactar</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="main">
+    <span class="main__title main__title--primary">Full stack developer</span>
+    <span class="main__title main__title--secundary">Rafael García Rea</span>
+    <span class="main__title main__description">Programar es jugar!</span>
+  </section>
+
+  <section  class="section section--skills">
+    <div class="container">
+    <h2 id="skills" class="section__title">Virtudes</h2>
+    <table class="table table--center">
+      <thead>
+      <tr class="table__head">
+        <th class="table__item">Habilidades profesionales</th>
+        <th class="table__item">Habilidades blandas</th>
+      </tr>
+    </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__item table__item--body">HTML</td>
+          <td class="table__item table__item--body">Trabajo en equipo</td>
+        </tr>
+        <tr>
+          <td class="table__item table__item--body">CSS</td>
+          <td class="table__item table__item--body">Resiliencia</td>
+        </tr>
+        <tr>
+          <td class="table__item table__item--body">JavaScript</td>
+          <td class="table__item table__item--body">Productividad</td>
+        </tr>
+        <tr>
+          <td class="table__item table__item--body">React js</td>
+          <td class="table__item table__item--body">Resolución de problemas</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </section>
+  <section class="container section--services">
+    <h2 id="services"  class="section__title">Servicios</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="card__title">php</div>
+        <div class="card__description">
+          Lenguaje
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__title">drupal</div>
+        <div class="card__description">
+          Sitios web complejos
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__title">reach js</div>
+        <div class="card__description">
+          Sitios web con font-end
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__title">bem</div>
+        <div class="card__description">
+          Metodología CSS
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section  class="section section--contact">
+      <h2 id="contact" class="section__title">Contactar</h2>
+      <form method="post" action="https://reqres.in/api/users" class="form-contact">
+
+        <div class="form-contact__group">
+          <label class="form-contact__label" for="email">correo electrónico</label>
+          <input class="form-contact__input form-contact__input--text" type="email" name="email" id="mail">
+        </div>
+        <div class="form-contact__group">
+          <label class="form-contact__label" for="subject">Asunto</label>
+          <input class="form-contact__input form-contact__input--text" type="text" name="subject" id="subject">
+        </div>
+
+        <label class="form-contact__label form-contact__label--block" for="message">Mensaje</label>
+        <textarea class="form-contact__input form-contact__input--textarea" name="message" id="message" cols="30" rows="10"
+          placeholder="Escribe un mensaje"></textarea>
+
+        <div class="form-contact__group form-contact__group--end">
+          <button class="button" role="button" type="submit">Enviar</button>
+        </div>
+      </form>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__text">&copy; Diseñado por <span>Rafa</span></p>
+    <ul class="social-media">
+      <li><a href="#" class="social-media__item"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="#" class="social-media__item"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#" class="social-media__item"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
